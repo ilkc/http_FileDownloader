@@ -468,8 +468,7 @@ func main() {
 
 	fmt.Printf("🚀 파일 서버가 시작되었습니다!\n")
 	fmt.Printf("📁 서빙 경로: %s\n", basePath)
-	fmt.Printf("🌐 접속 주소: http://localhost:%s\n", port)
-	fmt.Printf("%s:%s\n", myLocalIP, port)
+	fmt.Printf("🌐 접속 주소: http://%s:%s\n", myLocalIP, port)
 	fmt.Printf("⏹️  종료하려면 Ctrl+C를 누르세요\n\n")
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
